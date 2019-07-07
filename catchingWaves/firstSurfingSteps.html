@@ -1,0 +1,398 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>תופסים גלים - שלבי גלישה ראשונים</title>
+    <meta name="description" content="תיאור של שישה שלבים ראשונים המלמדים איך לגלוש" />
+    <meta name="keywords" content="שלבי גלישה, איך ללמוד לגלוש, גלישה למתחילים, גלישה, תרגול על החוף, regular foot, goofy foot, כניסה למים, חתירה,טכניקת מעבר גלים, push up,pop-up, גלישה על הקצף, יציאה מהמים, לתפוס גלים " />
+    <meta name="author" content="יובל פנחס, קטי מצליח, שחף נחום ומעיין חדד" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+    <!--favicon-->
+    <link rel="icon" href="Images/favicon.png">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link href="styles/aosSTYLE.css" rel="stylesheet" />
+
+
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+
+    
+</head>
+<body onload="tab_nav()">
+
+    <div id="container">
+        <!--accessible-skip blocks-->
+        <div id="skip">
+            <a href="#content-anchor">עבור לתוכן</a>
+            <a href="#nav-anchor">עבור לתפריט ניווט ראשי</a>
+        </div>
+        <header>
+            <!--accessible-skip blocks to navigation-->
+            <a name="nav-anchor" class="accessibility"></a>
+            <nav role="navigation" aria-label="תפריט ניווט ראשי">
+                <ul>
+                    <li>
+                        <a href="homePage.html">
+                            <img id="logo" alt="לוגו/דף הבית" src="images/homepage/logo.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="currentPage" href="firstSurfingSteps.html">שלבי גלישה ראשונים</a>
+                        <ul>
+                            <li>
+                                <a href="firstSurfingSteps.html#goToStepOne">תרגול על החוף</a>
+                            </li>
+                            <li>
+                                <a href="firstSurfingSteps.html#goToStepTwo">כניסה למים</a>
+                            </li>
+                            <li>
+                                <a href="firstSurfingSteps.html#goToStepThree">חתירה</a>
+
+                            </li>
+                            <li>
+                                <a href="firstSurfingSteps.html#goToStepFour">טכניקת מעבר גלים</a>
+
+                            </li>
+                            <li>
+                                <a href="firstSurfingSteps.html#goToStepFive">גלישה על הקצף</a>
+
+                            </li>
+                            <li>
+                                <a href="firstSurfingSteps.html#goToStepSix">יציאה מהמים</a>
+
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="noClick" href="#">הגלשן הראשון שלי</a>
+                        <ul>
+                            <li>
+                                <a href="howToChoosBoard.html">איך לבחור גלשן</a>
+                            </li>
+                            <li>
+                                <a class="notActive" href="#">איך לשמור על גלשן</a>
+                            </li>
+                            <li>
+                                <a class="notActive" href="#">DIY לגלשן</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="noClick" href="#">מצב הים</a>
+                        <ul>
+                            <li>
+                                <a href="knowingTheSea.html">להכיר את הים</a>
+                            </li>
+                            <li>
+                                <a class="notActive" href="forcastGuid.html">קריאת תחזית</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="noClick" href="#">גלישה מסביב לעולם</a>
+                        <ul>
+                            <li>
+                                <a href="interactive.html">יעדי גלישה</a>
+                            </li>
+                            <li>
+                                <a class="notActive" href="#">לא לשכוח לארוז</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="notActive" href="#">מילון מונחים</a>
+                    </li>
+                    <li>
+                        <a class="notActive" href="#">שאלות ותשובות</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--accessible-skip blocks to navigation-->
+        <a name="content-anchor" class="accessibility"></a>
+        <article id="firstSteps">
+            <div class="backgrndOpenPage">
+                <h1 id="headerFirstSreps" data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">שלבי גלישה ראשונים</h1>
+                <div id="introFirstSteps">
+                    <p>
+                        אז שנייה לפני שאנחנו לוקחים את הגלשן ונכנסים למים העמוקים בואו נלמד
+                        בשישה שלבים פשוטים איך עושים את זה בצורה נכונה ובטוחה
+                        והכי חשוב לגמרי לבד!
+                    </p>
+                </div>
+            </div>
+
+            <!--first step-->
+            <section id="goToStepOne" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                <div class="waveBetweenBoxes"></div>
+                <div class="boxesrow">
+                    <div class="videoOrengeBox">
+
+                        <h2 id="step1"><span class="nambers">01</span> תרגול על החוף</h2>
+                        <iframe id="video1" aria-label="סרטון הדגמה לשלב תרגול על החוף" class="youTubeVideo" width="560" height="315" src="https://www.youtube.com/embed/IYqzr6LRgNE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="TXTNextOrengeBox">
+                        <p>
+                            הדבר הראשון והבסיסי שאנו צריכים להתאמן עליו לפני הכניסה למים הוא POP UP שזה המעבר משכיבה על הבטן לעמידה על הגלשן.
+                        </p>
+
+                        <p class="firstStepsWords">
+                            איך נעשה זאת?
+                        </p>
+
+                        <ol id="firstStepsFirstOL">
+                            <li>נתחיל בלמקם את הגלשן על החוף</li>
+                            <li> נשכב על הבטן במרכז הגלשן (Stringer) כאשר הידיים מונחות מתחת לקו הכתפיים. </li>
+                            <li> נמקם את כפות הידיים בצידי הגלשן בקו החזה כאילו אנחנו באים לעשות שכיבות שמיכה. </li>
+                        </ol>
+                        <p>
+                            <span class="firstStepsWords">
+                                ואז בקפיצה אחת מהירה:
+                            </span>
+                            <br />
+                            ניישר את הידיים, נקמר את הגב
+                            ונעלה על הרגליים כאשר הן ממוקמות על מרכז הגלשן
+
+                            כשרגל אחת קדימה והשניה מאחוריה.
+                            המרחק בין הרגליים צריך להיות רחב במעט מרוחב הכתפיים, והברכיים בכיפוף קל. נסתכל קדימה וננסה להתמקד בנקודה אחת באופק בכדי לשמור על שיווי משקל.
+                        </p>
+                    </div>
+                </div>
+
+                <section class="txtBoxBlue" data-aos="fade-left" data-aos-offset="300" data-aos-once="true" data-aos-easing="ease-in-sine">
+                    <div class="centerTip">
+                        <div class="tip"></div>
+                        <div class="tipTXT">
+                            <h3>האם זה משנה עם נקפוץ עם רגל ימין או שמאל קדימה?</h3>
+                            <p>
+                                התשובה היא לא!<br />
+                                קיפצו בטבעיות זה לא משנה אם רגל ימין או שמאל מונחת קדימה (אצל כל גולש זה שונה) אבל ברגע שגילינו איזו רגל מרגישה לנו יותר נוחה וטבעית זו הרגל איתה נגלוש בים.<br />
+                                במונחים שלנו זה עובד כך: <br />
+                                אם הרגל השמאלית קדימה אנו גולשים מסוג
+                                Regular foot,
+                                זאת אומרת, עמידה רגילה ואם הרגל הימנית קדימה אנו גולשים מסוג
+                                Goofy foot-
+                                בתרגום חופשי "עמידה מטופשת".
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!--second step-->
+            <section id="goToStepTwo" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                <div class="waveBetweenBoxes"></div>
+                <div class="boxesrow">
+                    <div class="videoOrengeBox">
+                        <h2 id="step2"><span class="nambers">02</span> כניסה למים</h2>
+                        <iframe id="video2" aria-label="סרטון הדגמה לשלב כניסה למים" class="youTubeVideo" width="560" height="315" src="https://www.youtube.com/embed/IrCMdTuAPDo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="TXTNextOrengeBox">
+                        <p>
+                            ישנם סוגים רבים של גלים בסוגים שונים של חופים.<br />
+                            אנחנו נחפש את החוף עם הגלים הכי רכים וסלחניים ונשאיר את הגלים הקשים למקצועניים.<br />
+                            אנחנו נחפש אזור המאפשר כניסה ויציאה רגועה מהמים וניכנס למים רק כאשר ישנה רגיעה בגלים.<br />
+                            בדרך אל המים נחזיק את
+                            הליש
+                            (רצועת הגלשן) ביד כדי לא ליפול וכשנגיע למים הרדודים נניח את הגלשן על המים כאשר
+                            החרטום
+                            (קצה הגלשן) לכיוון הגלים.<br />
+                            נלחץ על חלקו האחורי של הגלשן וכהשגלים מגיעים זה יאפשר לנו להתקדם לעומק ולעבור אותם.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!--third step-->
+            <section id="goToStepThree" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                <div class="waveBetweenBoxes"></div>
+                <div class="boxesrow">
+                    <div class="videoOrengeBox">
+                        <h2 id="step3"><span class="nambers">03</span> חתירה</h2>
+                        <iframe id="video3" aria-label="סרטון הדגמה לשלב חתירה" class="youTubeVideo" width="560" height="315" src="https://www.youtube.com/embed/XykJMoBlM9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="TXTNextOrengeBox">
+                        <p>
+                            אחד החוקים הבסיסים לחתירה טובה ויעילה הוא למקם את הגוף בצורה טובה על הגלשן כך שיהיה מאוזן על המים.<br />
+                            אם החרטום בתוך המים זה אומר שאנחנו שוכבים קדימה מידי וכשגלים גבוהים יותר יגיעו הם ישקיעו את החרטום ויפילו אותנו.<br />
+                            לעומת זאת אם החרטום מזדקר באוויר זה אומר שאנחנו שוכבים אחורה מידי ואז יהיה לנו קשה יותר לחתור קדימה.<br />
+                            לכן צריך למצוא את נקודת האיזון בין השניים כדי שנתקדם מהר ולא ניפול מהגלשן.
+                        </p>
+
+                        <section>
+                            <h3>אז איך אפשר למצוא את נקודת האיזון? </h3>
+                            <p>
+                                בכדי לעשות זאת נמקם את הסנטר בערך בשלושת רבעי הגובה של הגלשן כאשר הראש והגב מורמים מעט כדי שנוכל לראות מה קורה סביב.<br />
+                                את הרגליים נמקם מעל זנב הגלשן כאשר הן צמודות אחת אל השנייה .<br />
+                                נקפיד לשמור על גוף ישר, חזק ומאוזן על הגלשן במשך כל החתירה כדי לעבור מהר ובקלות את הגלים עד למקום של רגיעה.<br />
+                                אחרי שהתמקמנו נתחיל לחתור, בכל חתירה נמתח את היד ככל האפשר קדימה ונכניס אותה למים כאשר האצבעות מהודקות בחוזקה בצורת קערית, תנסו לדמות את היד למשוט. <br />
+                                נכניס את כף היד עד עומק המפרק ונעביר אותה לאחור כאילו אנו שוחים חתירה, כך נמשיך יד יד.
+                                נשתדל לצמצם את כל התנועות הלא רצויות של הגוף, בשלב זה רק הידיים צריכות לנוע, כל תנועה אחרת תגרום ליציאה מאיזון ותאט את קצב ההתקדמות.
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            <!--forth step-->
+            <section id="goToStepFour" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                <div class="waveBetweenBoxes"></div>
+                <div class="boxesrow">
+                    <div class="videoOrengeBox">
+                        <h2 id="step4"><span class="nambers">04</span> טכניקת מעבר גלים</h2>
+                        <iframe id="video4" aria-label="סרטון הדגמה לשלב טכניקת מעבר גלים" class="youTubeVideo" width="560" height="315" src="https://www.youtube.com/embed/AuqTUS6qzHc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="TXTNextOrengeBox">
+                        <p>
+                            מעבר גלים זה אולי השלב הכי מאתגר כשלומדים לגלוש, זה יכול להיות מתסכל, מעייף וכנראה גם נבלע הרבה מים.<br />
+                            אך עם רצון טוב, התמדה וקריאת הטיפים בעמוד, אנחנו נגלה שמשתפרים מהר ושכל מעבר גלים שווה את התחושה המדהימה שנקבל כשנגלוש עליהם.<br />
+                            אז ככה, ישנן מספר שיטות לעבור גלים וכולן מתבססות על עקרון אחד<br />
+                            לזהות את נקודת השבירה של הגל.<br />
+                            ברגע שאנחנו יודעים מתי הגל נשבר אנחנו נדע איך כדאי לנו לעבור אותו.<br />
+                            אם לא נדע מתי הגל נשבר הוא עלול להישבר עלינו או כמו שאנחנו אומרים
+                            "לכבס"
+                            אותנו ולהאט לנו את ההתקדמות.
+                        </p>
+                        <p>
+                            <span class="firstStepsWords">Push-Up/ שכיבת שמיכה</span>
+                            <br />
+                            היא הטכניקה המומלצת בתחילת הדרך, כשהגלים עוד קטנים וניתן לבצע אותה עם כל סוג של גלשן.<br />
+                            מה שצריך לעשות זה לחתור מהר עד שנשיג תאוצה וכאשר נפגוש את הגל נעשה כמו שכיבת שמיכה קטנה על הגלשן כך שהגל יעבור מעל הגלשן אבל מתחת לחזה.<br />
+                            הכי חשוב לשים לב שאנחנו
+                            בדיוק מול הגל
+                            (החרטום לכיוון הגל) אם לא, נצא מאיזון וניפול.
+                        </p>
+                    </div>
+                </div>
+                <div class="txtBoxBlue" data-aos="fade-left" data-aos-offset="300" data-aos-once="true" data-aos-easing="ease-in-sine">
+                    <div class="centerTip">
+                        <div class="tip"></div>
+                        <div class="tipTXT">
+                            <p>
+                                <strong>
+                                    <span id="srong"> נקודה חשובה!</span>
+                                </strong>
+                                <br />
+                                יש להימנע בכל מחיר ממצב בו נצלול ונעזוב את הגלשן! אנחנו לא גולשים לבד בים והגלשן יכול לפגוע בגולשים אחרים, לכן נקפיד לשמור אותו צמוד אלינו ככל הניתן.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--fifth step-->
+            <section id="goToStepFive" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                <div class="waveBetweenBoxes"></div>
+                <div class="boxesrow">
+                    <div class="videoOrengeBox">
+                        <h2 id="step5"><span class="nambers">05</span> גלישה על הקצף </h2>
+                        <iframe id="video5" aria-label="סרטון הדגמה לשלב גלישה על הקצף" class="youTubeVideo" width="560" height="315" src="https://www.youtube.com/embed/IZPf2KeZ3BU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="TXTNextOrengeBox">
+                        <p>
+                            בשלב הזה אנחנו ניישם ונתרגל את כל השלבים שדיברנו עליהם עד עכשיו.<br />
+                            אחרי תרגול השלב הזה נהיה מוכנים לעלות ברמת הגלישה שלנו.<br />
+                            בשביל ששלב זה יהיה יעיל, אנחנו צריכים למצוא אזור בו שבירת הגלים נשארת רדודה למרחק גדול, זהו המצב האידיאלי לגלישה על הקצף.
+                        </p>
+
+                        <section>
+                            <h3>אז מה עושים?</h3>
+                            <ol>
+                                <li>נתקדם למרחק במים הרדודים עד שהמים יגיעו לנו לאזור הכתפיים. </li>
+                                <li>נעלה על הגלשן ונתמקם על הגלשן בשכיבה כמו שלמדנו בתרגול על החוף כאשר אנחנו פונים בקו ישר לכיוון החוף. </li>
+                                <li>במצב שכיבה נמתין בדריכות לקצף של גל שנשבר ונרגיש איך הוא דוחף אותנו לחוף, בעצם כך נגלוש בשכיבה מספר פעמים לפני שננסה לעמוד, רק בשביל להרגיש את התחושה שהקצף של הגל ידחוף אותנו קדימה.</li>
+                                <li>
+                                    אחרי שהבנו איך מרגישה התחושה של גלישה ומה קורה שהקצף דוחף אותנו, נעשה בדיוק אותו הדבר רק שהפעם גם נוסיף את
+                                    ה
+                                    POP UP
+                                    שלמדנו בשלב הראשון.<br />
+                                    ברגע שנרגיש את הקצף דוחף אותנו, נקפוץ בזריזות ונעמוד על הגלשן.
+                                </li>
+                            </ol>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            <!--six step-->
+            <section id="goToStepSix" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                <div class="waveBetweenBoxes"></div>
+                <div class="boxesrow">
+                    <div class="videoOrengeBox">
+                        <h2 id="step6"> <span class="nambers">06</span> יציאה מהמים</h2>
+                        <iframe id="video6" aria-label="סרטון הדגמה לשלב יציאה מהים" class="youTubeVideo" width="560" height="315" src="https://www.youtube.com/embed/ZzKJE3XcrA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="TXTNextOrengeBox">
+                        <p>
+                            כאשר נרצה לצאת מהמים נוכל לצאת בשתי דרכים.<br />
+                            אם כבר הצלחנו לעמוד על הגלשן ולתפוס גלים קטנים אז פשוט נוכל לגלוש ישר עד שנגיע לחוף, אם לא הצלחנו, תמיד נוכל לשכב על הבטן ולחכות לגל שידחוף אותנו החוצה כמו שתרגלנו בתחילת השלב הקודם. <br />
+                            יש שים לב מתי ישנה רגיעה במים כדי לדעת מתי נוכל להתמקם על הגלשן בשכיבה עם הפנים לכיוון החוף מבלי ליפול הרבה פעמים ולבזבז את הכוח שכבר בקושי נשאר לנו בסוף הסשן.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sumeryFirstStepsBackGRND" data-aos="fade-left" data-aos-offset="300" data-aos-once="true" data-aos-easing="ease-in-sine">
+                <div id="sumeryFirstStepsTXT">
+                    <h2>רגע של עידוד!</h2>
+                    <p>
+                        עולם הגלישה הוא ענק ומגוון ולים יש חוקים שחשוב לנו בתור גולשים להכיר ולכבד.<br />
+                        אי אפשר ללמוד את העולם הזה ביום אחד ולכן נצטרך להיות סבלניים.<br />
+                        אנחנו ניפול הרבה, נבלע מים, "נתכבס" בגלים, ייתפסו לנו השרירים ומה לא.<br />
+                        אבל יחד עם זאת
+                        אנחנו נרחף על הגלים, נצא לטיולים, נכיר חברים, נלמד תרגילים ונהיה מאושרים!<br />
+                        נזכור שכל מי שאנחנו רואים במים לא נולד גולש ורק התמדה וכוח רצון יידחפו אותנו להשתפר ולהצליח.
+                        <br />
+                        <span id="sumeryFirstStepsLastSen">
+                            אז בואו ניקח את הגלשן ונתחיל
+                            <span id="litfosGalim">לתפוס גלים!</span>
+                        </span>
+                    </p>
+                </div>
+
+            </section>
+        </article>
+        <footer>
+            <nav role="navigation" aria-label="תפריט ניווט משני לעמודים: צור קשר, מפת אתר ואודות">
+                <ul>
+                    <li>
+                        <a href="contact.html">צור קשר</a>
+                    </li>
+                    <li>
+                        <a href="webMap.html">מפת אתר</a>
+                    </li>
+                    <li>
+                        <a href="about.html">אודות</a>
+                    </li>
+                </ul>
+            </nav>
+            <p>
+                <span id="cathcingWaves"> תופסים גלים</span>
+                <i class="far fa-copyright"></i>
+                2019
+                <br />
+                האתר שיעזור לך לעלות על הגל
+            </p>
+            <p class="credit">
+                Sea waves icon made by <a href="https://www.freepik.com/">FreePik</a>
+                from  <a href="http://www.flaticon.com/">www.flaticon.com</a><br />
+                Lamp icon made by <b>George Cresnar</b> from
+                <a href=" https://www.iconfinder.com/search/?q=lamp&ref=navbar">Marketing Office</a> to
+                <a href="https://www.iconfinder.com/"> www.iconfinder.com</a><br />
+                shaka icon made by <a href="https://smashicons.com/"> Smashicons</a> from
+                <a href="http://www.flaticon.com/">www.flaticon.com</a>
+            </p>
+
+
+        </footer>
+    </div>
+    <script src="jScripts/aosJS.js"></script>
+    <script type="text/javascript">
+        AOS.init();
+    </script>
+</body>
+</html>

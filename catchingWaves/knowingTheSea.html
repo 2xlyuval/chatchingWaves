@@ -1,0 +1,292 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>תופסים גלים - להכיר את הים</title>
+    <meta name="description" content="מתי כדאי לצאת לגלוש תוך התחשבות בתנאי מזג האוויר בים" />
+    <meta name="keywords" content="מצב הים, להכיר את הים, מזג אוויר, מתי לגלוש, גאות, שפל, גובה, התנפחות הגל, רוח, כיוון הים, כיוון החוף, סוואל, גולשים מתחילים" />
+    <meta name="author" content="יובל פנחס, קטי מצליח, שחף נחום ומעיין חדד" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+    <!--favicon-->
+    <link rel="icon" href="Images/favicon.png">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link href="styles/aosSTYLE.css" rel="stylesheet" />
+
+
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+
+
+</head>
+<body onload="tab_nav()">
+    <div id="container">
+        <!--accessible-skip blocks-->
+        <div id="skip">
+            <a href="#content-anchor">עבור לתוכן</a>
+            <a href="#nav-anchor">עבור לתפריט ניווט ראשי</a>
+        </div>
+        <header>
+            <!--accessible-skip blocks to navigation-->
+            <a name="nav-anchor" class="accessibility"></a>
+            <nav role="navigation" aria-label="תפריט ניווט ראשי">
+                <ul>
+                    <li>
+                        <a href="homePage.html">
+                            <img id="logo" alt="לוגו/דף הבית" src="images/homepage/logo.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="firstSurfingSteps.html">שלבי גלישה ראשונים</a>
+                        <ul>
+                            <li>
+                                <a href="firstSurfingSteps.html#goToStepOne">תרגול על החוף</a>
+                            </li>
+                            <li>
+                                <a href="firstSurfingSteps.html#goToStepTwo">כניסה למים</a>
+                            </li>
+                            <li>
+                                <a href="firstSurfingSteps.html#goToStepThree">חתירה</a>
+
+                            </li>
+                            <li>
+                                <a href="firstSurfingSteps.html#goToStepFour">טכניקת מעבר גלים</a>
+
+                            </li>
+                            <li>
+                                <a href="firstSurfingSteps.html#goToStepFive">גלישה על הקצף</a>
+
+                            </li>
+                            <li>
+                                <a href="firstSurfingSteps.html#goToStepSix">יציאה מהמים</a>
+
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="noClick" href="#">הגלשן הראשון שלי</a>
+                        <ul>
+                            <li>
+                                <a href="howToChoosBoard.html">איך לבחור גלשן</a>
+                            </li>
+                            <li>
+                                <a class="notActive" href="#">איך לשמור על גלשן</a>
+                            </li>
+                            <li>
+                                <a class="notActive" href="#">DIY לגלשן</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="noClick currentPage" href="#">מצב הים</a>
+                        <ul>
+                            <li>
+                                <a href="knowingTheSea.html">להכיר את הים</a>
+                            </li>
+                            <li>
+                                <a class="notActive" href="forcastGuid.html">קריאת תחזית</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="noClick" href="#">גלישה מסביב לעולם</a>
+                        <ul>
+                            <li>
+                                <a href="interactive.html">יעדי גלישה</a>
+                            </li>
+                            <li>
+                                <a class="notActive" href="#">לא לשכוח לארוז</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="notActive" href="#">מילון מונחים</a>
+                    </li>
+                    <li>
+                        <a class="notActive" href="#">שאלות ותשובות</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--accessible-skip blocks to navigation-->
+        <a name="content-anchor" class="accessibility"></a>
+        <nav role="navigation" aria-label="תפריט פירורי לחם" class="perorLehem">
+            <ol class="breadcrumb">
+                <li><a href="homePage.html">דף הבית</a></li>
+                <li>מצב הים</li>
+                <li>להכיר את הים</li>
+            </ol>
+        </nav>
+        <article>
+
+            <div class="backgrndOpenPageKnow">
+                <div class="openTxt">
+                    <h1>להכיר את הים</h1>
+                    <p data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                        גולשים
+                        <span id="beginers">מתחילים?</span>
+                        <span id="advence">מתקדמים?</span>
+                        <span id="expert">מקצועים?</span> <br />
+                        הנה משהו שכולכם חייבים להכיר...<br />
+                        <span id="weather">מזג האוויר בים!</span> <br />
+                        אם כל גל שיגיע לחוף יהיה כמו הקודם לו, עולם הגלישה יהיה הרבה פחות מסעיר.<br />
+                        לפני היציאה לים חשוב מאוד לבדוק את תנאי מצב הים,
+                        מצב הים הוא קריטי ומשפיע על תנאי הגלישה.<br />
+                        מתי כדאי לצאת לגלוש? האם מסוכן לגלוש במקום מסוים? איפה ניתן לתפוס את הגל המושלם?
+                        <br /> בדיוק בשביל זה, נפרט כאן את התנאים האידיאליים לגלישה.
+                    </p>
+                </div>
+            </div>
+            <div class="clearFix"></div>
+
+            <div class="textalin">
+                <section class="bekotzur">
+                    <div class="knowTheHeader" div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                        <h2>רוח</h2>
+                        <div id="windIcon"></div>
+                    </div>
+                    <div class="knowTheSeaBox">
+                        <p>
+                            בתור גולשים, אחד המושגים שתשמעו הרבה בשפת הגולשים הוא סוואל – Swell.<br />
+                            אז מה זה אומר ולמה אנחנו משתמשים בו כל הזמן?<br />
+                            סוואל זהו אוסף של גלים הנעים מעומק הים לכיוון החוף.
+                            הסוואל נוצר מרוחות שמקורן בלב הים המעבירות אנרגיה מהאוויר למים.<br />
+                            לכן הרוח משחקת תפקיד חשוב ביצירת הגלים ומשפיע על איכותם.
+                        </p>
+                    </div>
+                    <div class="knowTheSeaBox">
+                        <section class="halfSection" div data-aos="fade-left" data-aos-once="true" data-aos-duration="1000" data-aos-delay="500">
+                            <h3>רוח לכיוון החוף  </h3>
+                            <p>
+                                אנחנו הגולשים לא אוהבים רוח לכיוון החוף.<br />
+                                היא מגיע מהים לחוף ונושבת מאחורי או מצידי הגלים וכך גורמת להם להיות מבולגנים ומטלטלים. <br />
+                                רוח כזו בעצם "מלכלכת את הגל" ובגלל זה אנחנו קוראים לו "גל מלוכלך", גל שמוריד את תנאי הגלישה.  <br />
+                                לכן צריך גם לבדוק את עוצמת הרוח בכדי לדעת עד כמה היא באמת תשפיע.
+                            </p>
+                        </section>
+
+                        <section class="halfSection" div data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
+                            <h3>רוח לכיוון הים</h3>
+                            <p>
+                                כשאנו קמים לסשן בוקר זה בדיוק כיוון הרוח שחלמנו עליו בלילה. <br />
+                                לעומת הרוח שנושבת לכיוון החוף, רוח לכיוון הים נושבת מול הגלים ומטפחת אותם. <br />
+                                היא מנקה את הגל ומאטה את השבירה שלו, מה שאומר, שייקח עוד כמה שניות לגל לפני שיישבר ולנו יהיה גל ארוך ומושלם לגלוש עליו. <br />
+                                גם ברוח כזו נבדוק את עוצמת הרוח, כי אם היא תהיה חזקה מידי היא עלולה לסיים את חיי הגל מהר יותר משציפינו.
+                            </p>
+                        </section>
+                    </div>
+                    <p class="sortlyP">
+                        <span class="shortly">בקיצור</span> <br />
+
+                        ככל שמהירות הרוח גבוהה וממושכת יותר, כך יהיו גלים גבוהים יותר. <br />
+                        תמיד נעדיף רוח שנושבת לכיוון הים כדי שיהיה לנו גלים נקיים ותמיד ניקח בחשבון גם את מהירות הרוח.
+                    </p>
+
+
+                </section>
+
+                <section>
+                    <div class="knowTheHeader" div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                        <h2 id="geutShefelHeder">גאות ושפל</h2>
+                        <div id="tideIcon"></div>
+                    </div>
+                    <p id="geutShefelPnoPadding">
+                        הגאות והשפל משפיעים ישירות על מהירות, גובה ואיכות הגלים.<br />
+                        איך בדיוק הגאות והשפל משפיעים על הגל?<br />
+                        בגלל שגאות ושפל מעלים ומורידים את גובה פני הים כך גם חשיפת הגל לקרקעית הים מושפע בהתאם. <br />
+                        כאשר גל נתקל בתחתית הים הוא נשבר.
+                        אז מה ההבדל בין השניים?
+                    </p>
+
+                    <p>
+                        בזמן הגאות מפלס המים עולה ולכן נקודת השבירה של הגל תהיה קרובה לחוף, מה שאומר שלנו יהיו גלים ארוכים, איטיים ורכים לגלוש עליהם.<br />
+                        בזמן השפל המים חוזרים אחורה אל כיוון לב הים ולכן הגלים נשברים רחוק יותר מהחוף ונוטים להיות תלולים יותר. <br />
+                        בנוסף לכך, יש נטייה חזקה להיסחפות לכיוון עומק הים, דבר שמקשה על תנאי הגלישה.<br />
+                        לעומת הגאות, בזמן השפל מפלס המים יורד ולכן בחופים סלעיים אזור הסלעים נוטה להיחשף ועלינו להיזהר מהם.
+                    </p>
+
+                    <p class="sortlyP">
+                        <span class="shortly">בקיצור</span> <br />
+
+                        נבדוק בתחזית את זמני ההתחלה והסוף של הגאות והשפל ואיך החוף שאנו גולשים בו מושפע מכך.
+                    </p>
+                </section>
+
+                <section>
+                    <div class="knowTheHeader" div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                        <h2 id="periodHeder">התנפחות וגובה הגל</h2>
+                        <div id="periodIcon"></div>
+                    </div>
+
+                    <div class="knowTheSeaBox2">
+                        <p id="peridP">
+                            אחד הפרמטרים המשפיעים ביותר על סשן גלישה היא תקופת התנפחות הגל.<br />
+                            התנפחות הגל היא כמות הזמן שלוקח לגל לעבור נקודה מסוימת. <br />
+                            ככל שתוקפת התנפחות של גל ארוכה יותר כך הגל יהיה מהיר, חזק וגבוה יותר.
+                        </p>
+                        <figure>
+                            <a href="images/knowingTheSea/graphPeriod.jpg" target="_blank">
+                                <img alt="גרף שמציג את רמת הגולש לפי תקופת התנפחות הגל " src="images/knowingTheSea/graphPeriod.jpg" />
+                            </a>
+                            <figcaption>התנפחות הגל לפי שניות</figcaption>
+                        </figure>
+                    </div>
+                    <p id="lastShortlyP" class="sortlyP">
+                        <span class="shortly">בקיצור</span><br />
+
+                        את הגל הטוב ביותר עבורנו נלמד עם הזמן והניסיון ובהתאם לרמה שאנו נמצאים בה.
+                    </p>
+                </section>
+            </div>
+        </article>
+
+
+        <footer>
+            <nav role="navigation" aria-label="תפריט ניווט משני לעמודים: צור קשר, מפת אתר ואודות">
+
+                <ul>
+                    <li>
+                        <a href="contact.html">צור קשר</a>
+                    </li>
+                    <li>
+                        <a href="webMap.html">מפת אתר</a>
+                    </li>
+                    <li>
+                        <a href="about.html">אודות</a>
+                    </li>
+                </ul>
+            </nav>
+            <p>
+                <span id="cathcingWaves"> תופסים גלים</span>
+                <i class="far fa-copyright"></i>
+                2019
+                <br />
+                האתר שיעזור לך לעלות על הגל
+
+            </p>
+
+            <p class="credit">
+                Sea waves icon made by <a href="https://www.freepik.com/">FreePik</a>
+                from  <a href="http://www.flaticon.com/">www.flaticon.com</a><br />
+                sea waves icon made by <a href=" https://www.flaticon.com/authors/ocha ">OCHA</a>
+                from <a href="http://www.flaticon.com/">www.flaticon.com</a><br />
+                Wind sign icon made by <a href="https://www.freepik.com/">FreePik</a>
+                from  <a href="http://www.flaticon.com/">www.flaticon.com</a>
+
+            </p>
+        </footer>
+    </div>
+    <script src="jScripts/aosJS.js"></script>
+    <script type="text/javascript">
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>תופסים גלים - עמוד הבית</title>
+    <meta name="description" content="דף הבית" />
+    <meta name="keywords" content="ללמוד לגלוש, גלישה,גלישה למתחילים, דף הבית, יעדי גלישה בעולם, איך לבחור גלשן, גלשנים, סוגי גלשנים, כל אחד יכול לגלוש, תופסים גלים, לתפוס גלים, לעלות על הגל " />
+    <meta name="author" content="יובל פנחס, קטי מצליח, שחף נחום ומעיין חדד" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+    <!--favicon-->
+    <link rel="icon" href="Images/favicon.png">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link href="styles/aosSTYLE.css" rel="stylesheet" />
+
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+</head>
+<body onload="tab_nav()">
+    <div id="container">
+        <!--accessible-skip blocks-->
+        <div id="skip">
+            <a href="#content-anchor">עבור לתוכן</a>
+            <a href="#nav-anchor">עבור לתפריט ניווט ראשי</a>
+        </div>
+        <header>
+            <!--accessible-skip blocks to navigation-->
+            <a name="nav-anchor" class="accessibility"></a>
+            <nav role="navigation" aria-label="תפריט ניווט ראשי">
+                <ul>
+                    <li>
+                        <a href="homePage.html">
+                            <img id="logo" alt="לוגו-דף הבית" src="images/homepage/logo.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="firstSurfingSteps.html">שלבי גלישה ראשונים</a>
+                        <ul>
+                            <li>
+                                <a href="firstSurfingSteps.html#goToStepOne">תרגול על החוף</a>
+                            </li>
+                            <li>
+                                <a href="firstSurfingSteps.html#goToStepTwo">כניסה למים</a>
+                            </li>
+                            <li>
+                                <a href="firstSurfingSteps.html#goToStepThree">חתירה</a>
+
+                            </li>
+                            <li>
+                                <a href="firstSurfingSteps.html#goToStepFour">טכניקת מעבר גלים</a>
+
+                            </li>
+                            <li>
+                                <a href="firstSurfingSteps.html#goToStepFive">גלישה על הקצף</a>
+
+                            </li>
+                            <li>
+                                <a href="firstSurfingSteps.html#goToStepSix">יציאה מהמים</a>
+
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="noClick" href="#">הגלשן הראשון שלי</a>
+                        <ul>
+                            <li>
+                                <a href="howToChoosBoard.html">איך לבחור גלשן</a>
+                            </li>
+                            <li>
+                                <a class="notActive" href="#">איך לשמור על גלשן</a>
+                            </li>
+                            <li>
+                                <a class="notActive" href="#">DIY לגלשן</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="noClick" href="#">מצב הים</a>
+                        <ul>
+                            <li>
+                                <a href="knowingTheSea.html">להכיר את הים</a>
+                            </li>
+                            <li>
+                                <a class="notActive" href="forcastGuid.html">קריאת תחזית</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="noClick" href="#">גלישה מסביב לעולם</a>
+                        <ul>
+                            <li>
+                                <a href="interactive.html">יעדי גלישה</a>
+                            </li>
+                            <li>
+                                <a class="notActive" href="#">לא לשכוח לארוז</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="notActive" href="#">מילון מונחים</a>
+                    </li>
+                    <li>
+                        <a class="notActive" href="#">שאלות ותשובות</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <!--accessible-skip blocks to navigation-->
+            <a name="content-anchor" class="accessibility"></a>
+            <div class="backgroundVideo">
+
+                <video aria-label="סרטון אווירה, גולש נכנס לים" autoplay muted loop id="myVideo" width="1366">
+                    <source src="images/homepage/kid_beach.mp4" type="video/mp4" />
+                    video not supported
+                </video>
+
+                <div class="opener">
+                    <h1>כל אחד <span id="boldOrenge">יכול</span> לגלוש</h1>
+                </div>
+                <div class="stopBtn">
+                    <div onclick="myFunction()">
+                        <i aria-label="כפתור לעצירה או הפעלת סרטון אווירה" id="myBtn" class="fas fa-pause-circle fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="homepageSection">
+                <div class="header">
+                    <h2>ללמוד לגלוש צעד אחר צעד</h2>
+                    <div class="surfBoardIcon"></div>
+                </div>
+
+                <ul id="surfList" data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
+                    <li>
+                        <a alt="מעבר להסבר על השלב תרגול על החוף" id="onShore" href="firstSurfingSteps.html#goToStepOne">
+                            <span class="liTXT">
+                                תרגול על החוף
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a alt="מעבר להסבר על השלב כניסה למים" id="inWater" href="firstSurfingSteps.html#goToStepTwo">
+                            <span class="liTXT">
+                                כניסה למים
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a alt="מעבר להסבר על השלב חתירה" id="paddeling" href="firstSurfingSteps.html#goToStepThree">
+                            <span class="liTXT">
+                                חתירה
+                            </span>
+                        </a>
+
+                    </li>
+                    <li>
+
+                        <a alt="מעבר להסבר על השלב מעבר גלים" id="passingWave" href="firstSurfingSteps.html#goToStepFour">
+                            <span class="liTXT">
+                                מעבר גלים
+                            </span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a alt="מעבר להסבר על השלב גלישה על הקצף" id="surfShalow" href="firstSurfingSteps.html#goToStepFive">
+                            <span class="liTXT">
+                                גלישה על הקצף
+                            </span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a alt="מעבר להסבר על השלב יציאה מהים" id="outWater" href="firstSurfingSteps.html#goToStepSix">
+                            <span class="liTXT">
+                                יציאה מהמים
+                            </span>
+                        </a>
+
+                    </li>
+                </ul>
+
+            </section>
+
+            <div class="homepageImage1">
+
+            </div>
+
+            <section class="homepageSection" id="homepageSectionboard">
+                <div class="header ">
+                    <h2>איזה גלשן כדאי לי לקנות?</h2>
+                    <div class="surfBoardIcon"></div>
+                </div>
+                <figure data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
+                    <a  href="images/homepage/homePage surf.png" target="_blank">
+                        <img alt="תמונה שמציגה ארבעה סוגי גלשנים עיקריים: long borad, fun borad, short board, fish-borad" id="homePageSurf" src="images/homepage/homePage surf.png" />
+                        </a>
+                </figure>
+                <a aria-label="כפתור מעבר לעמוד איך לבחור גלשן" id="btnBootstrap" class="btn btn-outline-info toPages btninfo" href="howToChoosBoard.html">למדריך המלא</a>
+            </section>
+
+            <div class="homepageImage2">
+
+            </div>
+
+            <section class="homepageSection " id="homepageSectionIneractive">
+                <div class="header ">
+                    <h2>לאן כדאי לי לטוס לגלוש?</h2>
+                    <div class="surfBoardIcon"></div>
+                </div>
+                <div id="homePageTruck" data-aos="fade-left" data-aos-once="true" data-aos-duration="2000"></div>
+                <p data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
+                    הכינו את המזוודות כי יש לנו את כל המידע שיעזור לכם לסגור את חופשת הגלישה המושלמת!<br />
+                    הכירו את שמונת יעדי הגלישה המופלאים בעולם וגלו באיזו תקופה הכי טוב לבקר בהם.
+                </p>
+
+                <a aria-label="כפתור מעבר לעמוד יעדי גלישה " id="btnBootstrap" class="btn btn-outline-info toPages btninfo" href="knowingTheSea.html">למדריך המלא</a>
+            </section>
+
+            <div class="homepageImage3">
+
+            </div>
+        </article>
+        <footer>
+            <nav role="navigation" aria-label="תפריט ניווט משני לעמודים: צור קשר, מפת אתר ואודות">
+                <ul>
+                    <li>
+                        <a href="contact.html">צור קשר</a>
+                    </li>
+                    <li>
+                        <a href="webMap.html">מפת אתר</a>
+                    </li>
+                    <li>
+                        <a href="about.html">אודות</a>
+                    </li>
+                </ul>
+            </nav>
+            <p>
+                <span id="cathcingWaves"> תופסים גלים</span>
+                <i class="far fa-copyright"></i>
+                2019
+                <br />
+                האתר שיעזור לך לעלות על הגל
+            </p>
+        </footer>
+
+    </div>
+    <script src="jScripts/aosJS.js"></script>
+    <script type="text/javascript">
+        AOS.init();
+    </script>
+</body>
+</html>

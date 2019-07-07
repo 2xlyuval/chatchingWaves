@@ -1,0 +1,1310 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap&subset=hebrew');
+/*accessible*/
+
+a:focus:hover {
+    color: lime;
+}
+
+a:focus:active {
+    color: #313C56;
+}
+
+.accessibility {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    margin-top:-200px;
+    
+}
+
+#skip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    list-style: outside none;
+}
+
+
+    #skip a {
+        position: absolute;
+        top: 30px;
+    }
+
+        #skip a:focus, #skip a:active {
+            position: relative;
+            left: 0;
+            z-index: 9999;
+            width: 75%;
+            height: auto;
+            margin: 0 auto;
+            padding: 30px 45px;
+            text-align: center;
+            text-decoration: none;
+            background: #f8f8f8;
+            border: 1px solid #313C56
+        }
+
+
+/*general*/
+
+body {
+    direction: rtl;
+    font-family: 'Rubik', sans-serif;
+    color: #313C56;
+    text-align: right;
+}
+
+a, a:hover {
+    color: #313C56;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+#container {
+    width: 1366px;
+    margin: 0 auto;
+    margin-top: 120px;
+    background-color: #f8f8f8;
+    overflow:hidden;
+}
+ 
+p{
+    font-size:16pt;
+}
+
+/*design nav*/
+.currentPage {
+    font-weight: 900;
+    border-top: 2px solid #17aebf;
+}
+
+header {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1366px;
+    background-color: #f8f8f8;
+    border-bottom: 10px solid #17aebf;
+    background-position: top center;
+    height: 120px;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+}
+
+    nav ul {
+        margin: 0;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            width: 100%;
+            padding-top: 16px;
+            top: 16px;
+            left: 0;
+        }
+
+        /*nav hover*/
+        nav ul li:hover > ul {
+            display: block;
+            width: 100%;
+            padding-top: 18px;
+        }
+
+        /*line nav*/
+        nav ul li, .homepageSection ul li {
+            display: inline-block;
+            float: right;
+        }
+
+        /*color and design nav*/
+        nav ul li {
+            position: relative;
+            margin-top: 70px;
+            display: block;
+            color: #313C56;
+            text-decoration: none;
+            text-align: center;
+            border-left: 1px solid #313C56;
+            flex: 1;
+        }
+
+            nav ul li a:hover {
+                font-weight: 900;
+                -webkit-transition: all 0.2s ease-in-out;
+                -moz-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+            }
+
+
+    /**remove from last item**/
+    nav li:last-child {
+        border: none;
+    }
+
+
+    nav ul li ul li a {
+        border: none;
+        background-color: #f8f8f8;
+        margin: 0;
+        float: right;
+        text-align: right;
+        width: 100%;
+    }
+
+    nav ul li ul li {
+        border: none;
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 10px;
+        border-bottom: 3px solid #313C56;
+        width: 100%;
+    }
+
+        nav ul li ul li a:hover {
+            font-weight: 900;
+            font-size: 13pt;
+            text-align: right;
+        }
+
+
+#logo {
+    height: 90px;
+    display: inline-block;
+    margin-top: -65px;
+}
+
+.noClick {
+    cursor: default;
+}
+/*footer*/
+footer {
+    background-image: url('../images/homepage/footer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 180px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14pt;
+}
+
+    footer nav {
+        width: 30%;
+        height: initial;
+        margin-top: 40px;
+    }
+
+        footer nav ul {
+            width: 100%;
+            height: initial;
+        }
+
+            footer nav ul li {
+                margin-top: 0;
+                height: 20px;
+            }
+
+                footer nav ul li:hover {
+                    font-size: 16pt
+                }
+
+    footer p {
+        font-size: 9pt;
+        font-weight: 400;
+        float: right;
+        width: 1366px;
+        text-align: center;
+        margin-top: 20px;
+        color: black;
+        margin-bottom: 0;
+    }
+    footer .credit {
+        font-size: 7pt;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+#cathcingWaves {
+    font-weight: 500;
+}
+
+/*bread crumb*/
+
+.perorLehem >ol.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    list-style: none;
+    background-color: transparent;
+    margin-bottom: 0;
+}
+
+    .perorLehem > ol.breadcrumb li + li:before {
+        padding: 8px;
+        content: ">>";
+    }
+
+   .perorLehem > ol.breadcrumb li a {
+        text-decoration: underline;
+    }
+
+       .perorLehem > ol.breadcrumb li a:hover {
+            font-weight: 900;
+        }
+
+/*link not work*/
+
+.notActive {
+    cursor: not-allowed;
+}
+
+/*home page*/
+
+#btnBootstrap {
+    color: #313C56;
+    border-color: #313C56;
+}
+
+    #btnBootstrap:hover {
+        background-color: #313C56;
+        color: #f8f8f8;
+    }
+
+.backgroundVideo {
+    position: relative;
+    z-index: 0;
+}
+
+.opener {
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    background-color: rgba(242,188,87,0.8);
+    padding: 0px 15px;
+    margin-right: -1px;
+    width: 50%;
+    text-align: center;
+}
+
+    .opener > h1 {
+        font-size: 50pt;
+        font-weight: 400;
+    }
+
+#boldOrenge {
+    color: #313C56;
+    font-weight: 900;
+    font-size: 70pt;
+}
+
+.stopBtn {
+    position: absolute;
+    z-index: 2;
+    top: 8px;
+    left: 8px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+    .stopBtn:hover {
+        transform: scale(1.2);
+    }
+
+
+
+/*parallex home page*/
+
+.homepageImage1 {
+    background-image: url('../images/homepage/backgroundsurfBoards.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    height: 350px;
+    background-attachment: fixed;
+    background-position-y: center;
+}
+
+.homepageImage2 {
+    background-image: url('../images/homepage/whenToSurf.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    height: 350px;
+    background-attachment: fixed;
+}
+
+
+.homepageImage3 {
+    background-image: url('../images/homepage/backgroundtruck.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    height: 350px;
+    background-attachment: fixed;
+}
+
+.homepageSection {
+    height: 500px;
+    background-color: #f8f8f8;
+    border-bottom: 10px solid #f2bc57;
+    border-top: 10px solid #f2bc57;
+    position: relative;
+}
+
+#homepageSectionboard {
+    height: 600px;
+}
+
+.homepageSection h1 {
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+.homepageSection h2 {
+    font-weight: 900;
+    margin-bottom: 0px;
+    font-size:40px;
+}
+
+.homepageSection .header {
+    float: right;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+.surfBoardIcon {
+    background-image: url('../images/homepage/surfBoardHome.png');
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 25px;
+    background-position: right;
+}
+
+.homepageSection #surfList {
+    display: inline-block;
+    margin-top: 100px;
+    margin-right: 10%;
+}
+
+
+.homepageSection ul li {
+    text-align: center;
+    margin-left: 65px;
+}
+
+    .homepageSection ul li a {
+        background-size: contain;
+        display: inline-block;
+        background-repeat: no-repeat;
+        height: 120px;
+        width: 120px;
+        text-align: center;
+    }
+ #homepageSectionIneractive p{
+    position:absolute;
+}
+/*home page first steps icons*/
+#onShore {
+    background-image: url('../images/homepage/surfIcons/onShore.png');
+    background-position: bottom;
+    width: 130px;
+}
+
+#inWater {
+    background-image: url('../images/homepage/surfIcons/intoWater.png');
+}
+
+#paddeling {
+    background-image: url('../images/homepage/surfIcons/paddeling.png');
+    background-position: bottom;
+    width: 140px;
+}
+
+#passingWave {
+    background-image: url('../images/homepage/surfIcons/passingWave.png');
+    background-position: bottom;
+    width: 150px;
+}
+
+#surfShalow {
+    background-image: url('../images/homepage/surfIcons/onShalow.png');
+    background-position: bottom;
+    width: 160px;
+    height: 120px;
+}
+
+#outWater {
+    background-image: url('../images/homepage/surfIcons/outWater.png');
+}
+/*home page first steps icons hover*/
+#onShore:hover {
+    background-image: url('../images/homepage/surfIcons/hover/onShore2.png');
+}
+
+#inWater:hover {
+    background-image: url('../images/homepage/surfIcons/hover/intoWater2.png');
+}
+
+#paddeling:hover {
+    background-image: url('../images/homepage/surfIcons/hover/paddeling2.png');
+}
+
+#surfShalow:hover {
+    background-image: url('../images/homepage/surfIcons/hover/onShalow2.png');
+    height:37%;
+}
+
+
+#passingWave:hover {
+    background-image: url('../images/homepage/surfIcons/hover/PassingWave2.png');
+}
+
+#outWater:hover {
+    background-image: url('../images/homepage/surfIcons/hover/outWater2.png');
+}
+
+
+#homePageSurf {
+    height: 100%;
+    width: 60%;
+    margin-right: 20%;
+}
+
+.liTXT {
+    display: block;
+    margin-top: 140px;
+    font-weight: 500;
+    font-size: 15pt;
+    width: 145px;
+    font-weight: 900;
+}
+
+
+.homepageSection ul li {
+    background-size: cover;
+    display: inline-block;
+    height: 340px;
+    width: 120px;
+    text-align: center;
+}
+
+
+
+.homepageSection p {
+    position: absolute;
+    top: 150px;
+    right: 110px;
+    font-size: 16pt;
+    font-weight: 500;
+    display: inline-block;
+}
+
+#homePageTruck {
+    width: 230px;
+    background-image: url('../images/homepage/truck.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50%;
+    margin-top: 17%;
+    margin-right: 60%;
+}
+
+.btninfo {
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    width: 150px;
+    height: 40px;
+    font-size: 19px;
+}
+
+
+
+/*first surfing steps*/
+
+.backgrndOpenPage {
+    background-image: url('../images/firstSteps/firstStepBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+#headerFirstSreps {
+    margin-top: 10%;
+    background-color: #f2bc57;
+    display: inline-block;
+    font-size: 40pt;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 900;
+    padding: 15px;
+}
+
+
+#introFirstSteps {
+    width: 38%;
+    margin-right: 6%;
+    background-color: #f8f8f8;
+    padding: 30px;
+    font-size: 18pt;
+    opacity: 0.8;
+    padding-bottom: 20px;
+}
+
+.videoOrengeBox {
+    background-color: #f2bc57;
+    width: 50%;
+    padding: 30px;
+}
+
+.TXTNextOrengeBox {
+    width: 50%;
+    padding: 50px;
+    margin-top: 110px;
+    font-size: 16pt;
+}
+
+#firstStepsFirstOL{
+    margin-top:-20px;
+}
+
+.firstStepsWords {
+    font-weight: 900;
+}
+
+#firstSteps .boxesrow {
+    display: flex;
+    flex-direction: row;
+}
+
+#firstSteps section:nth-child(odd) > .boxesrow {
+    flex-direction: row-reverse;
+}
+
+
+
+/*header and numbers*/
+.nambers {
+    font-size: 65pt;
+    display: block;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+#firstSteps section:nth-child(odd) .boxesrow .videoOrengeBox > h2 {
+    float: left;
+}
+
+#firstSteps h2 {
+    font-size: 20pt;
+}
+
+#step1{
+    width:164px;
+}
+
+#step2 {
+    width: 128px;
+}
+
+#step3 {
+    width: 104px;
+}
+
+#step4 {
+    width: 211px;
+}
+
+#step5 {
+    width: 177px;
+}
+
+#step6 {
+    width: 144px;
+}
+
+.waveBetweenBoxes {
+    background-image: url('../images/firstSteps/waves.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    margin-right: 558px;
+    margin-top: 60px;
+}
+
+/*videos*/
+.youTubeVideo {
+    width: 623px;
+    height: 350px;
+    margin-top: 20px;
+}
+
+
+.TXTNextOrengeBox {
+    margin-top: 115px;
+}
+
+/*tips*/
+.centerTip{
+    margin:0 auto;
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+}
+.txtBoxBlue {
+    background-color: #17aebf;
+    width: 100%;
+    padding: 50px;
+    color: #313c56;
+    display: flex;
+}
+
+.tip {
+    background-image: url(../images/firstSteps/tip.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 70px;
+    width: 120px;
+    margin-left: 25px;
+}
+
+.tipTXT {
+    width: 805px;
+    font-weight: 500;
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+    .tipTXT h3, #srong {
+        font-size: 20pt;
+        font-weight: 900;
+    }
+
+strong {
+    font-weight: 500;
+}
+
+#sumeryFirstStepsBackGRND {
+    background-image: url('../images/firstSteps/shalaHand.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 330px;
+    background-position-x: 40%;
+}
+
+#sumeryFirstStepsTXT {
+    width: 100%;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 14pt;
+    padding-right:50px;
+}
+
+    #sumeryFirstStepsTXT > h2 {
+        font-size: 20pt;
+        font-weight: 900;
+    }
+
+
+
+#sumeryFirstStepsLastSen {
+    font-size: 25pt;
+}
+
+/*how to choose board*/
+
+#introBackground {
+    background-image: url('../images/howToChooseBoard/backgroundBoardStyles.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+#inroBoardStyles {
+    margin-top: 5%;
+    width:1366px;
+    position: absolute;
+}
+
+#chooseBoards h1 {
+    width: 685px;
+    background-color: #f2bc57;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 40pt;
+    font-weight: 900;
+    padding: 15px;
+}
+
+#boardTXT {
+    background-image: url(../images/howToChooseBoard/fixedSurfBoard.png);
+    background-repeat: no-repeat;
+    background-size: 1366px;
+    background-position-x: center;
+    background-position-y: 100px;
+    background-attachment: fixed;
+}
+
+    #boardTXT > h2 {
+        text-align: center;
+        background-color: #f2bc57;
+        font-size: 40pt;
+        font-weight: 900;
+        padding: 15px;
+    }
+
+        #boardTXT section p{
+            font-size:13pt;
+        }
+
+
+        #boardStyleTXT {
+            padding-top: 700px;
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 200px;
+            justify-content: flex-end;
+        }
+
+#longBoard1, #funBoard2, #shortBoard3, #fishBoard4 {
+    width: 180px;
+}
+
+#longBoard1 {
+    margin-left: 150px;
+}
+
+#funBoard2 {
+    margin-left: 140px;
+}
+
+#shortBoard3 {
+}
+
+#fishBoard4 {
+    margin-right: 170px;
+    margin-left: 30px;
+}
+
+#inroBoardStyles p {
+    width: 60%;
+    background-color: rgba(248,248,248,0.8);
+    margin: 0 auto;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 16pt;
+    font-weight: 400;
+}
+
+#theSurfBoard {
+    font-size: 30pt;
+    font-weight:900;
+}
+
+#surfSizeBoxesrow {
+    display: flex;
+    flex-direction: row;
+}
+
+    #surfSizeBoxesrow h2 {
+        position: absolute;
+        background-color: #f2bc57;
+        width: 1366px;
+        text-align: center;
+        font-size: 40pt;
+        font-weight: 900;
+        padding: 15px;
+    }
+
+#blueBox {
+    background-color: #C9E7F2;
+    width: 40%;
+}
+
+    #blueBox h2 {
+        color: #313C56;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 45pt;
+        padding: 60px;
+    }
+
+#widthHeightBoards {
+    background-image: url(../images/howToChooseBoard/widthHeightSurfBoard.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 305px;
+    margin-top: 33%;
+    margin-left: 9%;
+}
+
+
+#TXTNextToBlue {
+    background-color: #f8f8f8;
+    width: 60%;
+    padding: 52px;
+    margin-top: 6%;
+}
+
+
+/*knowing the sea*/
+    .knowTheSeaBox {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.halfSection{
+    width:100%;
+}
+
+.knowTheHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+    .knowTheSeaBox section {
+        padding-top: 30px;
+    }
+
+#windIcon {
+    background-image: url('../images/knowingTheSea/windIcon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 130px;
+}
+
+#tideIcon {
+    background-image: url('../images/knowingTheSea/heighLowTideIcon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 180px;
+    height:100px;
+    margin-right:50px;
+}
+
+#periodIcon {
+    background-image: url('../images/knowingTheSea/periodIcon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 115px;
+}
+
+.boxescolor .infoTxt {
+    flex: 1;
+}
+
+.boxescolor {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.backgrndOpenPageKnow {
+    background-image: url('../images/knowingTheSea/backgroundKnowingTheSea.jpg');
+    background-repeat: no-repeat;
+    height: 700px;
+    background-attachment: fixed;
+}
+
+    .backgrndOpenPageKnow h1 {
+        background-color: rgb(201,230,241);
+        text-align: center;
+        margin-bottom: 0;
+        text-align: center;
+        margin-bottom: 0;
+        font-size: 40pt;
+        font-weight: 900;
+        padding: 15px;
+    }
+
+.openTxt {
+    padding-top: 5%;
+}
+
+    .openTxt p {
+        background-color: rgba(248,248,248,0.8);
+        width: 734px;
+        padding: 30px 50px;
+        font-weight: 400;
+        font-size: 16pt;
+        margin: 0 auto;
+    }
+
+.clearFix {
+    clear: both;
+}
+
+
+#beginers {
+    font-size: 20px;
+}
+
+#advence {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#expert {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#weather {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.questions {
+    font-weight: bold;
+}
+
+figure img {
+    height: 400px;
+    margin-bottom:0px;
+}
+
+.textalin {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+    .textalin p {
+        padding: 25px 30px;
+    }
+
+    .textalin h2 {
+        font-size: 50px;
+        font-weight: 900;
+    }
+
+#geutShefelHeder {
+    margin-top: 20px;
+}
+
+#geutShefelPnoPadding {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.knowTheSeaBox2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#periodHeder {
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+.textalin h3 {
+    font-size: 25px;
+    padding-right: 30px;
+}
+
+#peridP {
+    margin: 0 auto;
+    text-align: right;
+}
+
+.sortlyP {
+    background-color: #C9E7F2;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#lastShortlyP {
+    margin: 25px 0px 35px 0px;
+}
+
+.shortly {
+    font-weight: 900;
+}
+/*interactiveGraph*/
+iframe {
+    width: 1366px;
+    height: 535px;
+    margin-bottom: -10px;
+}
+
+/*about*/
+#aboutBackground {
+    background-image: url(../images/about/aboutBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    background-attachment: fixed;
+}
+
+    #aboutBackground > h1 {
+        width: 685px;
+        background-color: #f2bc57;
+        text-align: center;
+        margin-bottom: 0;
+        font-size: 40pt;
+        font-weight: 900;
+        padding: 15px;
+        position: absolute;
+        margin-top: 10%;
+    }
+
+#aboutTXT {
+    width: 75%;
+    margin: 0 auto;
+}
+
+    #aboutTXT h2 {
+        background: #313C56;
+        text-align: center;
+        padding: 20px;
+        font-size: 35pt;
+        color: white;
+    }
+
+.aboutCenter {
+    width: 72%;
+    margin: 0 auto;
+    padding: 25px 15px;
+    font-size: 16pt;
+}
+
+    .aboutCenter ul li a{
+        text-decoration:underline;
+    }
+
+    .aboutCenter ul li a:hover {
+        text-decoration: underline;
+        font-weight:900;
+    }
+
+#aboutArticle #aboutTXT .crueImg .aboutCenter ul li a {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+#shahaf {
+    background-image: url('../images/about/shachaf.jpg');
+}
+
+#keti {
+    background-image: url('../images/about/keti.jpg');
+}
+
+#maayan {
+    background-image: url('../images/about/maayan.jpg');
+}
+
+#yuval {
+    background-image: url('../images/about/yuval.jpg');
+}
+
+.crueImg .aboutCenter ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 60px -100px;
+}
+
+.crueName {
+    font-weight: 700;
+    font-size: 14pt;
+    margin-top: 13.5%;
+    position: absolute;
+    margin-right: 4.5%
+}
+
+aside > #HITlogo {
+    background-image: url('../images/about/logosvg.png');
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+}
+
+#faculta {
+    font-size: 14pt;
+    margin-top: 6.6%;
+    position: absolute;
+    margin-right: -30px;
+}
+
+/*contact*/
+
+
+
+.formStyle {
+    background-image: url('../images/contact/contactBackground.jpg');
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.formTitle {
+    background-color: rgba(201,230,241,0.8);
+    width: 44%;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+    .formTitle > h1 {
+        font-weight: 900;
+        margin-top: 35px;
+    }
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(201,230,241,0.8);
+    width: 44%;
+    margin: 0 auto;
+}
+
+#nameMailFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom:10px;
+}
+
+label {
+    display: block;
+    font-weight: 900;
+}
+
+.formControl {
+    width: 100%;
+    border: none;
+    margin: 0 auto;
+}
+
+.massageContent {
+    width: 70%;
+    border: none;
+    margin: 0 auto;
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    background-color: rgba(242,188,087,0.8);
+    height: 50px;
+    transition: 0.4s ease;
+    width: 30%;
+    color: #313c56;
+    font-weight: 900;
+}
+
+    form .submit:hover {
+        background-color: rgba(049,060,086,0.8);
+        color: #f2bc57;
+        cursor: pointer;
+    }
+
+    form .submit:active {
+        background-color: white;
+    }
+
+#feedback {
+    height: 50px;
+}
+
+/*webMap*/
+
+#webHalfBackground {
+    background-image: url(../images/webMap.jpg);
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    background-position-y: -130px;
+}
+
+#wabMapArticle {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+    #wabMapArticle #webWrap {
+        padding: 30px;
+        margin: 0 auto;
+    }
+
+    #wabMapArticle .header > h1 {
+        font-weight: 900;
+        font-size: 40pt;
+        margin-bottom: -10px;
+    }
+
+    #wabMapArticle .header {
+        padding-bottom: 30px;
+        width: 135%;
+    }
+
+    #wabMapArticle #webWrap ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+        #wabMapArticle #webWrap ul li ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+            #wabMapArticle #webWrap ul li ul li {
+                list-style: disc;
+                font-size: 14pt;
+                font-weight: 300;
+            }
+
+        #wabMapArticle #webWrap ul li {
+            font-size: 16pt;
+            font-weight: 500;
+        }
+
+            #wabMapArticle #webWrap ul li a:hover {
+                text-decoration: underline;
+            }
+
+
+            #wabMapArticle #webWrap ul li ul li a:hover {
+                text-decoration: underline;
+            }
